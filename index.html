@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta name="description" content="testing angular">
+<meta name="keyword" content="angular.js">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-init="profile_name='Vince'" ng-app="myApp" ng-controller="myCtrl">
+<div class="wrapper">
+	<h1>{{ profile_name }} Profile</h1>
+
+	<div class="circle"><div></div></div>
+
+	<div class="relative">
+
+		<div class="box col-sm-4">
+			<h2>Work Experience:</h2>
+			<div ng-repeat="x in expList">
+			    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.expText"></span>
+			</div>
+			<form ng-submit="addExp()">
+				<input class="input-field" type="text" ng-model="expInput" />
+				<input class="button" type="submit" value="Add">
+				<input class="button-2" ng-click="remove()" value="Remove">
+			</form>
+		</div>
+
+		<div class="box-2 col-sm-4">
+			<h2>Technical Skills:</h2>
+			<ul>
+				<li ng-repeat="skill in skills">{{ skill }}</li>
+			</ul>
+		</div>
+		<div class="box-3 col-sm-4">
+			<h2>Soft Skills:</h2>
+				<p>{{ softSkills }}</p>
+				<label>Enter Skills: </label><input type="text" ng-model="softSkills" />
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/modules.js"></script>
+
+	<!--<div class="footer">
+	<p>&bull; Bootstrap &bull; Angular &bull; SCSS</p>
+</div>-->
+</div>
+</body>
+</html>
