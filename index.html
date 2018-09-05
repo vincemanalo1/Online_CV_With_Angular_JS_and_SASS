@@ -13,7 +13,10 @@
 	<h1>{{ profile_name }} Profile</h1>
 
 	<div class="circle"><div></div></div>
-
+	<h2>Career Highlights</h2>
+	<ul class="padding-left">
+		<li ng-repeat="highlight in highlights">{{ highlight }}</li>
+	</ul>
 	<div class="relative">
 
 		<div class="box col-sm-4">
