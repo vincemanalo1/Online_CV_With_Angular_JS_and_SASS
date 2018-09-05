@@ -16,27 +16,10 @@ app.controller('myCtrl', function($scope) {
         });
     };
 
-
-
     $scope.skills = [
         "HTML 5",
-        "CSS3/SCSS",
+        "CSS 3",
         "PHP",
         "MySQL",
-        "Javascript/ Jquery",
-        "XML",
-        "AJAX",
-        "JSON",
-        "Angular.js"
-    ]
-
-    $scope.highlights = [
-      "Seasoned IT professional with more than 10 years of experience in Web Development",
-      "Supervised Web Developers that resulted in successful and early releases of projects",
-      "Created hundreds of websites and landing pages with Wordpress, PHP, HTML5, CSS3/SCSS, Jquery, Javascript, MySQL, Angular.js",
-      "Initiated and created a local CMS called Translation Management System, a software that helps web managers to translate web contents in different languages.",
-      "Studied at British Columbia Institute of Technology in Vancouver",
-      "Mentored students at BCIT",
-      "Had lead roles experiences"
     ]
 });
