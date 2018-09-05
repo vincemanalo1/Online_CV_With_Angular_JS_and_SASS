@@ -22,4 +22,6 @@ app.controller('myCtrl', function($scope) {
         "PHP",
         "MySQL",
     ]
+
+    $scope.page_title = "Online CV Using Angular JS and SASS"
 });
