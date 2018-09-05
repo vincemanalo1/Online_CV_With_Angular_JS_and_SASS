@@ -1,20 +1,19 @@
 <!doctype html>
-<html>
+<html ng-init="profile_name='My Profile'" ng-app="myApp" ng-controller="myCtrl">
 <head>
-<title></title>
+<title>{{ page_title }}</title>
 <meta name="description" content="testing angular">
 <meta name="keyword" content="angular.js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body ng-init="profile_name='Vince'" ng-app="myApp" ng-controller="myCtrl">
+<body>
 <div class="wrapper">
-	<h1>{{ profile_name }} Profile</h1>
-
+	<h1 class="enjoy-css">{{profile_name}}</h1>
 	<div class="circle"><div></div></div>
-	<h2>Career Highlights</h2>
-	<ul class="padding-left">
+	<h2 class="line-1 anim-typewriter">Career Highlights</h2>
+	<ul class="padding-left animated-list">
 		<li ng-repeat="highlight in highlights">{{ highlight }}</li>
 	</ul>
 	<div class="relative">
