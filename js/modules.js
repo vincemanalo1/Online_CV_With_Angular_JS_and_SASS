@@ -39,4 +39,6 @@ app.controller('myCtrl', function($scope) {
       "Mentored students at BCIT",
       "Had lead roles experiences"
     ]
+
+    $scope.page_title = "Online CV Using Angular JS and SASS"
 });
